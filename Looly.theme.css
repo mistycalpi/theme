@@ -1,244 +1,196 @@
-@import url("https://raw.githubusercontent.com/surgedevs/visual-refresh-compact-title-bar/refs/heads/main/desktop.css");
-@import url("https://discordstyles.github.io/RadialStatus/RadialStatus.css");
+/**
+ * @name midnight
+ * @description a slightly changed midnight theme, ALL credit goes to them, I just wanted a lil customization
+ * @author refact0r
+ * @version 2.1.1
+ * @invite nz87hXyvcy
+ * @website https://github.com/refact0r/midnight-discord
+ * @source https://github.com/refact0r/midnight-discord/blob/master/themes/midnight.theme.css
+ * @authorId 508863359777505290
+ * @authorLink https://www.refact0r.dev
+*/
 
-:root,
-.theme-dark,
-.theme-light {
-  --rgb-afk-color: 45, 45, 45;
-  --rgb-background: 0, 0, 0;
-  --rgb-close-button: 50, 50, 50;
-  --rgb-dnd-color: 255, 50, 50;
-  --rgb-highlight: 129, 32, 37;
-  --rgb-online-color: 57, 175, 20;
-  --rgb-streaming-color: 188, 19, 254;
-  --rgb-text: 200, 200, 200;
-  --highlight: rgb(var(--rgb-highlight));
-  --online-color: rgb(var(--rgb-online-color));
-  --afk-color: rgb(var(--rgb-afk-color));
-  --dnd-color: rgb(var(--rgb-dnd-color));
-  --streaming-color: rgb(var(--rgb-streaming-color));
-  --close-button: rgb(var(--rgb-close-button));
-  --text: rgb(var(--rgb-text));
-  --header-primary: rgb(255, 255, 255);
-  --header-secondary: rgb(200, 200, 200);
-  --text-brand: rgb(45, 45, 45);
-  --text-link: rgb(75, 75, 255);
-  --background: rgb(0, 0, 0);
-  --background-accent: var(--background);
-  --background-base-low: rgb(20, 20, 20);
-  --background-base-lowest: rgb(20, 20, 20);
-  --background-blur: 0px;
-  --background-brightness: 100%;
-  --background-floating: rgb(20, 20, 20) !important;
-  --background-image: unset;
-  --background-position: center;
-  --background-size: cover;
-  --background-primary: rgb(20, 20, 20) !important;
-  --background-secondary: rgb(20, 20, 20) !important;
-  --background-secondary-alt: var(--background);
-  --background-tertiary: rgb(20, 20, 20) !important;
-  --background-nested-floating: var(--background);
-  --background-surface-high: rgb(20, 20, 20);
-  --channeltextarea-background: var(--background);
-  --chat-background: var(--background);
-  --chat-input-container-background: var(--background);
-  --input-background: var(--background);
-  --modal-background: var(--background);
-  --modal-footer-background: var(--background);
-  --primary-630: var(--background);
-  --member-list-background: rgb(99, 99, 99);
-  --background-mentioned: rgb(48, 9, 9);
-  --background-mentioned-hover: rgb(48, 48, 48);
-  --background-message-hover: rgb(27, 27, 27);
-  --background-message-automod: rgba(var(--rgb-highlight), 0.2);
-  --background-message-automod-hover: rgba(var(--rgb-highlight), 0.4);
-  --background-message-highlight: rgba(var(--rgb-highlight), 0.3);
-  --background-message-highlight-hover: rgb(129, 32, 37);
-  --background-modifier-hover: rgba(255, 255, 255, 0.1);
-  --background-modifier-selected: rgba(46, 46, 46, 0.322);
-  --background-modifier-accent: rgba(var(--rgb-highlight), 0.2);
-  --background-modifier-active: rgba(var(--rgb-highlight), 0.3);
-  --app-border-frame: rgb(var(--rgb-highlight));
-  --border-faint: rgb(129, 32, 37);
-  --border-subtle: rgb(var(--rgb-highlight));
-  --chat-border: var(--highlight);
-  --logo-primary: var(--highlight);
-  --bg-brand: rgba(0, 100, 255, 0.6);
-  --bg-surface-overlay: var(--background);
-  --status-danger: var(--dnd-color);
-  --status-positive: var(--online-color);
-  --status-warning: var(--afk-color);
-  --interactive-normal: rgb(199, 199, 199);
-  --interactive-hover: rgba(255, 255, 255, 0.911);
-  --interactive-active: rgb(164, 164, 164);
-  --interactive-muted: rgb(99, 99, 99);
-  --text-muted: var(--text);
-  --text-normal: var(--text);
-  --text-danger: var(--dnd-color);
-  --text-positive: var(--online-color);
-  --text-warning: var(--afk-color);
-  --text-link-low-saturation: rgba(var(--rgb-highlight), 0.5);
-  --textbox-markdown-syntax: var(--text-link);
-  --button-brand-background: rgba(var(--rgb-highlight), 0.2);
-  --button-brand-background-hover: rgba(var(--rgb-highlight), 0.7);
-  --button-brand-background-active: rgba(var(--rgb-highlight), 1);
-  --button-brand-background-disabled: rgba(var(--rgb-highlight), 0.2);
-  --button-primary-background: rgba(var(--rgb-highlight), 0.2);
-  --button-primary-background-hover: rgba(var(--rgb-highlight), 0.7);
-  --button-primary-background-active: rgba(var(--rgb-highlight), 1);
-  --button-primary-background-disabled: rgba(var(--rgb-highlight), 0.2);
-  --button-filled-brand-background: rgba(var(--rgb-highlight), 0.2);
-  --button-filled-brand-background-hover: rgba(var(--rgb-highlight), 0.7);
-  --button-filled-brand-background-active: rgba(var(--rgb-highlight), 1);
-  --button-filled-brand-background-border: rgba(var(--rgb-highlight), 0.5);
-  --button-danger-background: rgba(var(--rgb-close-button), 0.2);
-  --button-danger-background-hover: rgba(var(--rgb-close-button), 0.7);
-  --button-danger-background-active: rgba(var(--rgb-close-button), 1);
-  --button-danger-background-disabled: rgba(var(--rgb-close-button), 0.2);
-  --button-positive-background: rgba(var(--rgb-online-color), 0.2);
-  --button-positive-background-hover: rgba(var(--rgb-online-color), 0.7);
-  --button-positive-background-active: rgba(var(--rgb-online-color), 1);
-  --button-positive-background-disabled: rgba(var(--rgb-online-color), 0.2);
-  --scrollbar-auto-scrollbar-color-thumb: var(--highlight);
-  --scrollbar-auto-thumb: var(--highlight);
-  --scrollbar-thin-thumb: var(--highlight);
-  --search-popout-date-picker-border: 1px solid var(--highlight);
-  --search-popout-option-filter-text: rgba(var(--rgb-highlight), 0.7);
-  --search-popout-option-user-nickname: var(--highlight);
-  --search-popout-option-user-username: rgba(var(--rgb-highlight), 0.7);
-  --spoiler-hidden-background: var(--highlight);
-  --spoiler-revealed-background: rgba(var(--rgb-highlight), 0.2);
-  --transition-time: 5s;
-  --profile-body-background-color: rgb(0, 0, 0) !important;
-  --profile-gradient-button-color: rgb(0, 0, 0) !important;
-  --profile-gradient-note-background-color: rgb(0, 0, 0) !important;
-  --profile-gradient-overlay-color: rgb(0, 0, 0) !important;
-  --profile-gradient-primary-color: rgb(0, 0, 0) !important;
-  --profile-gradient-secondary-color: rgb(0, 0, 0) !important;
-  --rs-small-spacing: 2px;
-  --rs-medium-spacing: 3px;
-  --rs-large-spacing: 4px;
-  --rs-small-width: 2px;
-  --rs-medium-width: 3px;
-  --rs-large-width: 4px;
-  --rs-avatar-shape: 50%;
-  --rs-online-color: #43b581;
-  --rs-idle-color: #faa61a;
-  --rs-dnd-color: #f04747;
-  --rs-offline-color: #636b75;
-  --rs-streaming-color: #643da7;
-  --rs-invisible-color: #747f8d;
-  --rs-self-speaking-color: #57d39b;
-  --rs-phone-color: var(--rs-online-color);
-  --rs-phone-visible: none;
+/* import theme modules */
+@import url("https://refact0r.github.io/midnight-discord/build/midnight.css");
+
+body {
+    /* font options */
+    --font: "figtree"; /* change to '' for default discord font */
+    --code-font: ""; /* change to '' for default discord font */
+    font-weight: 400; /* normal text font weight. DOES NOT AFFECT BOLD TEXT */
+
+    /* sizes */
+    --gap: 12px; /* spacing between panels */
+    --divider-thickness: 4px; /* thickness of unread messages divider and highlighted message borders */
+    --border-thickness: 1px; /* thickness of borders around main panels. DOES NOT AFFECT OTHER BORDERS */
+
+    /* animation/transition options */
+    --animations: on; /* off: disable animations/transitions, on: enable animations/transitions */
+    --list-item-transition: 0.2s ease; /* transition for list items */
+    --dms-icon-svg-transition: 0.4s ease; /* transition for the dms icon */
+    --border-hover-transition: 0.2s ease; /* transition for borders when hovered */
+
+    /* top bar options */
+    --top-bar-height: var(
+        --gap
+    ); /* height of the top bar (discord default is 36px, old discord style is 24px, var(--gap) recommended if button position is set to titlebar) */
+    --top-bar-button-position: titlebar; /* off: default position, hide: hide buttons completely, serverlist: move inbox button to server list, titlebar: move inbox button to channel titlebar (will hide title) */
+    --top-bar-title-position: off; /* off: default centered position, hide: hide title completely, left: left align title (like old discord) */
+    --subtle-top-bar-title: off; /* off: default, on: hide the icon and use subtle text color (like old discord) */
+
+    /* window controls */
+    --custom-window-controls: on; /* off: default window controls, on: custom window controls */
+    --window-control-size: 14px; /* size of custom window controls */
+
+    /* dms button options */
+    --custom-dms-icon: custom; /* off: use default discord icon, hide: remove icon entirely, custom: use custom icon */
+    --dms-icon-svg-url: url("https://refact0r.github.io/midnight-discord/assets/Font_Awesome_5_solid_moon.svg"); /* icon svg url. MUST BE A SVG. */
+    --dms-icon-svg-size: 90%; /* size of the svg (css mask-size property) */
+    --dms-icon-color-before: var(--icon-secondary); /* normal icon color */
+    --dms-icon-color-after: var(
+        --white
+    ); /* icon color when button is hovered/selected */
+    --custom-dms-background: off; /* off to disable, image to use a background image (must set url variable below), color to use a custom color/gradient */
+    --dms-background-image-url: url(""); /* url of the background image */
+    --dms-background-image-size: cover; /* size of the background image (css background-size property) */
+    --dms-background-color: linear-gradient(
+        70deg,
+        var(--blue-2),
+        var(--purple-2),
+        var(--red-2)
+    ); /* fixed color/gradient (css background property) */
+
+    /* background image options */
+    --background-image: off; /* off: no background image, on: enable background image (must set url variable below) */
+    --background-image-url: url(""); /* url of the background image */
+
+    /* transparency/blur options */
+    /* NOTE: TO USE TRANSPARENCY/BLUR, YOU MUST HAVE TRANSPARENT BG COLORS. FOR EXAMPLE: --bg-4: hsla(220, 15%, 10%, 0.7); */
+    --transparency-tweaks: off; /* off: no changes, on: remove some elements for better transparency */
+    --remove-bg-layer: off; /* off: no changes, on: remove the base --bg-3 layer for use with window transparency (WILL OVERRIDE BACKGROUND IMAGE) */
+    --panel-blur: off; /* off: no changes, on: blur the background of panels */
+    --blur-amount: 12px; /* amount of blur */
+    --bg-floating: var(
+        --bg-3
+    ); /* set this to a more opaque color if floating panels look too transparent. only applies if panel blur is on  */
+
+    /* chatbar options */
+    --custom-chatbar: aligned; /* off: default chatbar, aligned: chatbar aligned with the user panel, separated: chatbar separated from chat */
+    --chatbar-height: 47px; /* height of the chatbar (52px by default, 47px recommended for aligned, 56px recommended for separated) */
+    --chatbar-padding: 8px; /* padding of the chatbar. only applies in aligned mode. */
+
+    /* other options */
+    --small-user-panel: on; /* off: default user panel, on: smaller user panel like in old discord */
 }
 
-.typing_b88801.base_b88801 {
-  margin-bottom: 6px;
-  margin-left: 4px;
-}
+/* color options */
+:root {
+    --colors: on; /* off: discord default colors, on: midnight custom colors */
 
-.typing_b88801.base_b88801 > * {
-  line-height: 10px !important;
-  font-size: 10px !important;
-}
+    /* text colors */
+    --text-0: var(--bg-4); /* text on colored elements */
+    --text-1: hsl(220, 45%, 95%); /* other normally white text */
+    --text-2: hsl(220, 25%, 70%); /* headings and important text */
+    --text-3: hsl(220, 20%, 60%); /* normal text */
+    --text-4: hsl(220, 15%, 40%); /* icon buttons and channels */
+    --text-5: hsl(220, 15%, 25%); /* muted channels/chats and timestamps */
 
-.typing_b88801.base_b88801 > div > span > strong > div > svg {
-  height: 10px !important;
-  margin-left: 3px;
-  margin-top: 3px;
-}
+    /* background and dark colors */
+    --bg-1: hsla(220, 15%, 20%, 1); /* dark buttons when clicked */
+    --bg-2: hsla(220, 15%, 16%, 1); /* dark buttons */
+    --bg-3: hsla(220, 15%, 13%, 1); /* spacing, secondary elements */
+    --bg-4: hsla(220, 15%, 10%, 1); /* main background color */
+    --hover: hsla(221, 19%, 40%, 0.1); /* channels and buttons when hovered */
+    --active: hsla(
+        220,
+        19%,
+        40%,
+        0.2
+    ); /* channels and buttons when clicked or selected */
+    --active-2: hsla(
+        220,
+        19%,
+        40%,
+        0.3
+    ); /* extra state for transparent buttons */
+    --message-hover: hsla(220, 0%, 0%, 0.5); /* messages when hovered */
 
-.typingDots_b88801 > .ellipsis_b88801 + .text_b88801 {
-  font-size: 0;
-  height: 16px;
-}
+    /* accent colors */
+    --accent-1: #48a1ff; /* links and other accent text */
+    --accent-2: var(--blue-2); /* small accent elements */
+    --accent-3: var(--blue-3); /* accent buttons */
+    --accent-4: var(--blue-4); /* accent buttons when hovered */
+    --accent-5: var(--blue-5); /* accent buttons when clicked */
+    --accent-new: var(
+        --accent-2
+    ); /* stuff that's normally red like mute/deafen buttons */
+    --mention: linear-gradient(
+        to right,
+        color-mix(in hsl, var(--accent-2), transparent 90%) 40%,
+        transparent
+    ); /* background of messages that mention you */
+    --mention-hover: linear-gradient(
+        to right,
+        color-mix(in hsl, var(--accent-2), transparent 95%) 40%,
+        transparent
+    ); /* background of messages that mention you when hovered */
+    --reply: linear-gradient(
+        to right,
+        color-mix(in hsl, var(--text-3), transparent 90%) 40%,
+        transparent
+    ); /* background of messages that reply to you */
+    --reply-hover: linear-gradient(
+        to right,
+        color-mix(in hsl, var(--text-3), transparent 95%) 40%,
+        transparent
+    ); /* background of messages that reply to you when hovered */
 
-.typingDots_b88801 > .ellipsis_b88801 + .text_b88801 > strong {
-  font-size: 12px;
-}
+    /* status indicator colors */
+    --online: var(--green-2); /* change to #40a258 for default */
+    --dnd: var(--red-2); /* change to #d83a41 for default */
+    --idle: var(--yellow-2); /* change to #cc954c for default */
+    --streaming: var(--purple-2); /* change to ##9147ff for default */
+    --offline: var(--text-4); /* change to #82838b for default offline color */
 
-.typingDots_b88801 > .ellipsis_b88801 + .text_b88801 > strong::after {
-  color: var(--text-secondary);
-  font-weight: 500;
-}
+    /* border colors */
+    --border-light: var(--hover); /* general light border color */
+    --border: var(--active); /* general normal border color */
+    --border-hover: var(--active); /* border color of panels when hovered */
+    --button-border: hsl(
+        220,
+        0%,
+        100%,
+        0.1
+    ); /* neutral border color of buttons */
 
-.typingDots_b88801 > .ellipsis_b88801 + .text_b88801 > strong:last-child::after {
-  content: " is yapping...";
-}
+    /* base colors */
+    --red-1: oklch(75% 0.12 0);
+    --red-2: oklch(70% 0.12 0);
+    --red-3: oklch(65% 0.12 0);
+    --red-4: oklch(60% 0.12 0);
+    --red-5: oklch(55% 0.12 0);
 
-.typingDots_b88801
-  > .ellipsis_b88801
-  + .text_b88801
-  > strong:last-child:not(:first-child)::after {
-  content: " are yapping...";
-}
+    --green-1: oklch(75% 0.11 170);
+    --green-2: oklch(70% 0.11 170);
+    --green-3: oklch(65% 0.11 170);
+    --green-4: oklch(60% 0.11 170);
+    --green-5: oklch(55% 0.11 160);
 
-.typingDots_b88801
-  > .ellipsis_b88801
-  + .text_b88801
-  > strong:nth-last-child(2)::after {
-  content: " and ";
-}
+    --blue-1: oklch(75% 0.1 215);
+    --blue-2: oklch(70% 0.1 215);
+    --blue-3: oklch(65% 0.1 215);
+    --blue-4: oklch(60% 0.1 215);
+    --blue-5: oklch(55% 0.1 215);
 
-.typingDots_b88801
-  > .ellipsis_b88801
-  + .text_b88801
-  > strong:nth-last-child(3)::after {
-  content: ", ";
-}
+    --yellow-1: oklch(80% 0.11 90);
+    --yellow-2: oklch(75% 0.11 90);
+    --yellow-3: oklch(70% 0.11 90);
+    --yellow-4: oklch(65% 0.11 90);
+    --yellow-5: oklch(60% 0.11 90);
 
-.typingDots_b88801
-  > .ellipsis_b88801
-  + .text_b88801:not(:has(> strong))::after {
-  font-size: 12px;
-  content: "Several people are yapping...";
-}
-
-.username-1A8OIy[href="/users/1236215647310975016"]::after {
-  content: "OWNER";
-  background-color: #3b82f6;
-  color: white;
-  padding: 2px 6px;
-  border-radius: 3px;
-  font-size: 10px;
-  font-weight: 600;
-  margin-left: 6px;
-  vertical-align: middle;
-  text-transform: uppercase;
-}
-
-.channelBottomBarArea_f75fb0 > div {
-  margin: 10px 6px 9px 6px !important;
-  min-height: 60px;
-}
-
-.channelBottomBarArea_f75fb0 > div > div.scrollableContainer__74017 {
-  position: absolute;
-  bottom: 0;
-  transform: translateY(-4px);
-  width: 100%;
-}
-
-.attachWrapper__0923f > button {
-  margin-left: -9px !important;
-}
-
-.stackedBars__74017 {
-  margin-bottom: 55px;
-}
-
-.menu-3sdvDG {
-  background-color: rgb(20, 20, 20) !important;
-  color: rgb(220, 220, 220) !important;
-}
-
-.menu-3sdvDG .item-1tOPte:hover {
-  background-color: rgb(40, 40, 40) !important;
-  color: white !important;
-}
-
-.colorDefault-CDqZdO,
-.label-3CEiKJ {
-  color: rgb(220, 220, 220) !important;
+    --purple-1: oklch(75% 0.11 310);
+    --purple-2: oklch(70% 0.11 310);
+    --purple-3: oklch(65% 0.11 310);
+    --purple-4: oklch(60% 0.11 310);
+    --purple-5: oklch(55% 0.11 310);
 }
