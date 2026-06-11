@@ -1,0 +1,163 @@
+{
+    "name": "system142857",
+    "description": "a tui-style discord theme 2: electric boogaloo.",
+    "authors": [
+        {
+            "name": "LampDelivery",
+            "id": "650805815623680030"
+        }
+    ],
+    "semanticColors": {
+        "HEADER_PRIMARY": [
+            "#FFFFFF"
+        ],
+        "HEADER_SECONDARY": [
+            "#808080"
+        ],
+        "TEXT_NORMAL": [
+            "#FFFFFF"
+        ],
+        "TEXT_MUTED": [
+            "#808080"
+        ],
+        "MOBILE_TEXT_HEADING_PRIMARY": [
+            "#FFFFFF"
+        ],
+        "INTERACTIVE_HOVER": [
+            "#1A3040"
+        ],
+        "INTERACTIVE_ACTIVE": [
+            "#FFFFFF"
+        ],
+        "INTERACTIVE_MUTED": [
+            "#484848"
+        ],
+        "BACKGROUND_PRIMARY": [
+            "#0F1213"
+        ],
+        "BACKGROUND_SECONDARY": [
+            "#0F1213"
+        ],
+        "BACKGROUND_SECONDARY_ALT": [
+            "#303437"
+        ],
+        "BACKGROUND_SURFACE_HIGH": [
+            "#1F2224"
+        ],
+        "CARD_BACKGROUND_DEFAULT": [
+            "#1F2224"
+        ],
+        "BACKGROUND_TERTIARY": [
+            "#07090B"
+        ],
+        "BACKGROUND_ACCENT": [
+            "#43A6C7"
+        ],
+        "BACKGROUND_FLOATING": [
+            "#0F1213"
+        ],
+        "BACKGROUND_MOBILE_PRIMARY": [
+            "#1F2224"
+        ],
+        "BACKGROUND_MOBILE_SECONDARY": [
+            "#1F2224"
+        ],
+        "BACKGROUND_NESTED_FLOATING": [
+            "#0F1213"
+        ],
+        "BACKGROUND_MESSAGE_HOVER": [
+            "#1F2224"
+        ],
+        "BACKGROUND_MODIFIER_HOVER": [
+            "#1F2224"
+        ],
+        "BACKGROUND_MODIFIER_ACTIVE": [
+            "#303437"
+        ],
+        "BACKGROUND_MODIFIER_SELECTED": [
+            "#303437"
+        ],
+        "BACKGROUND_MODIFIER_ACCENT": [
+            "#07090B"
+        ],
+        "SCROLLBAR_THIN_THUMB": [
+            "#303437"
+        ],
+        "SCROLLBAR_THIN_TRACK": [
+            "transparent"
+        ],
+        "SCROLLBAR_AUTO_THUMB": [
+            "#057E9B"
+        ],
+        "SCROLLBAR_AUTO_TRACK": [
+            "#057E9B"
+        ],
+        "CHANNELTEXTAREA_BACKGROUND": [
+            "#303437"
+        ],
+        "CHANNELS_DEFAULT": [
+            "#2D94B1"
+        ],
+        "TEXT_LINK": [
+            "#43A6C7"
+        ],
+        "TEXT_DANGER": [
+            "#DF7A9B"
+        ],
+        "KEYBOARD": [
+            "#07090B"
+        ],
+        "BG_BACKDROP": [
+            "#000000B2"
+        ],
+        "REDESIGN_BUTTON_SECONDARY_BACKGROUND": [
+            "#07090B"
+        ],
+        "CHANNEL_ICON": [
+            "#808080"
+        ],
+        "CHAT_BACKGROUND": [
+            "#0F1213"
+        ],
+        "CARD_PRIMARY_BG": [
+            "#303437"
+        ]
+    },
+    "rawColors": {
+        "PRIMARY_500": "#2D94B1",
+        "PRIMARY_100": "#FFFFFF",
+        "PRIMARY_200": "#5BBBDB",
+        "PRIMARY_300": "#2D94B1",
+        "PRIMARY_360": "#43A6C7",
+        "PRIMARY_400": "#43A6C7",
+        "PRIMARY_600": "#1F2224",
+        "PRIMARY_630": "#1F2224",
+        "PRIMARY_660": "#1F2224",
+        "PRIMARY_700": "#1F2224",
+        "PRIMARY_800": "#07090B",
+        "BLACK_500": "#000000B2",
+        "BRAND_260": "#2D94B1",
+        "BRAND_360": "#43A6C7",
+        "BRAND_500": "#43A6C7",
+        "BRAND_560": "#5BBBDB",
+        "YELLOW_300": "#2D94B1",
+        "GREEN_600": "#2D94B1",
+        "RED_400": "#DF7A9B",
+        "WHITE_500": "#FFFFFF",
+        "GREEN_360": "#057E9B",
+        "PLUM_23": "#303437",
+        "PLUM_20": "#0F1213",
+        "PLUM_18": "#0F1213",
+        "PLUM_17": "#1F2224",
+        "PLUM_16": "#2D94B1",
+        "PLUM_13": "#43A6C7",
+        "PLUM_10": "#808080",
+        "PLUM_3": "#FFFFFF",
+        "PLUM_9": "#FFFFFF"
+    },
+    "plus": {
+        "version": "0",
+        "iconpack": "rosiecord-plumpy"
+    },
+    "spec": 2
+}
