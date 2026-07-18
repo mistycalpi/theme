@@ -10,109 +10,95 @@
  * @authorLink https://www.mistycalpi.win/
 */
 
-@import url("https://github.com/mistycalpi/theme/blob/main/system142857.theme.css");
+/* base engine -- this repo only ever ships the config, base lives upstream */
+@import url('https://refact0r.github.io/system24/build/system24.css');
 
 body {
-    /* font */
-    --font: "Space Mono"; /* main text font */
-    --code-font: "Space Mono"; /* code blocks / monospace font */
-    font-weight: 400; /* text font weight */
-    letter-spacing: -0.05ch; /* decreases letter spacing for better readability */
+    --font: "MonoLisaCode Trial";
+    --code-font: "MonoLisaCode Trial";
+    font-weight: 400;
+    letter-spacing: -0.05ch;
 
-    /* sizes */
-    --gap: 12px; /* spacing between panels */
-    --divider-thickness: 4px; /* thickness of unread messages divider */
-    --border-thickness: 2px; /* thickness of borders around main panels */
-    --border-hover-transition: 0.2s ease; /* transition for borders when hovered */
+    --gap: 12px;
+    --divider-thickness: 4px;
+    --border-thickness: 2px;
+    --border-hover-transition: 0.2s ease;
 
-    /* animation/transition options */
-    --animations: on; /* off: disable animations/transitions, on: enable animations/transitions */
-    --list-item-transition: 0.2s ease; /* transition for list items */
-    --dms-icon-svg-transition: 0.4s ease; /* transition for the dms icon */
+    --animations: on;
+    --list-item-transition: 0.2s ease;
+    --dms-icon-svg-transition: 0.4s ease;
 
-    /* top bar options */
-    --top-bar-height: var(--gap); /* height of the top bar */
-    --top-bar-button-position: titlebar; /* off: default position, hide: hide buttons completely, serverlist: move inbox button to server list, titlebar: move inbox button to channel titlebar */
-    --top-bar-title-position: off; /* off: default centered position, left: left align title */
-    --subtle-top-bar-title: off; /* default: show icon, on: hide icon and use subtle text color */
+    --top-bar-height: var(--gap);
+    --top-bar-button-position: titlebar;
+    --top-bar-title-position: off;
+    --subtle-top-bar-title: off;
 
-    /* window controls */
-    --custom-window-controls: off; /* default: off, custom: on */
-    --window-control-size: 14px; /* size of custom window controls */
+    --custom-window-controls: off;
+    --window-control-size: 14px;
 
-    /* dms button options */
-    --custom-dms-icon: off; /* off: use default discord icon, hide: remove icon, custom: use custom icon */
-    --dms-icon-svg-url: url(""); /* icon svg url */
-    --dms-icon-svg-size: 90%; /* size of the svg */
-    --dms-icon-color-before: var(--icon-subtle); /* normal icon color */
-    --dms-icon-color-after: var(
-        --white
-    ); /* icon color when button is hovered/selected */
-    --custom-dms-background: off; /* off to disable, image to use background, color to use custom color/gradient */
-    --dms-background-image-url: url(""); /* url of the background image */
-    --dms-background-image-size: cover; /* size of the background image */
+    --custom-dms-icon: off;
+    --dms-icon-svg-url: url("");
+    --dms-icon-svg-size: 90%;
+    --dms-icon-color-before: var(--icon-subtle);
+    --dms-icon-color-after: var(--white);
+    --custom-dms-background: off;
+    --dms-background-image-url: url("");
+    --dms-background-image-size: cover;
     --dms-background-color: linear-gradient(
         70deg,
-        var(--blue-2),
-        var(--purple-2),
-        var(--red-2)
-    ); /* fixed color/gradient */
+        var(--accent-2),
+        var(--text-4),
+        var(--accent-2)
+    );
 
-    /* background image options */
-    --background-image: on; /* off: no background image, on: enable background image */
-    --background-image-url: url("https://i.imgur.com/Eu9qYlC.jpeg"); /* url of the background image */
+    --background-image: on;
+    --background-image-url: url("https://i.imgur.com/Eu9qYlC.jpeg");
 
-    /* transparency/blur options */
-    --transparency-tweaks: on; /* off: no changes, on: remove some elements for better transparency */
-    --remove-bg-layer: var(
-        --bg-3
-    ); /* off: no changes, on: remove the base --bg-3 layer */
-    --panel-blur: on; /* off: no changes, on: blur the background of panels */
-    --blur-amount: 0px; /* amount of blur */
-    --bg-floating: var(
-        --bg-1
-    ); /* set to a more opaque color if floating panels look too transparent */
+    --transparency-tweaks: on;
+    --remove-bg-layer: var(--bg-3);
+    --panel-blur: on;
+    --blur-amount: 0px;
+    --bg-floating: var(--bg-1);
 
-    /* other options */
-    --small-user-panel: on; /* off: default user panel, on: smaller user panel */
-    --unrounding: off; /* default: off, custom: on */
-    --custom-spotify-bar: on; /* default: off, on: custom text-like spotify progress bar */
-    --ascii-titles: on; /* default: off, on: use ascii font for titles */
-    --ascii-loader: system24; /* default: off, system24: use system24 loader, cats: use cats loader */
-    --panel-labels: on; /* default: off, on: add labels to panels */
-    --label-color: var(--text-muted); /* color of labels */
-    --label-font-weight: 500; /* font weight of labels */
+    --small-user-panel: on;
+    --unrounding: off;
+    --custom-spotify-bar: on;
+    --ascii-titles: on;
+    --ascii-loader: system24;
+    --panel-labels: on;
+    --label-color: var(--text-muted);
+    --label-font-weight: 500;
 }
 
 :root {
     --radius-sm: 2px;
     --radius-md: 4px;
     --radius-lg: 6px;
-    --colors: on; /* keep custom colors */
+    --colors: on;
 
-    /* text colors */
+    /* text -- black & white system colors */
     --text-0: var(--bg-4);
-    --text-1: oklch(100% 0.00011 271.152);
-    --text-2: oklch(100% 0.00011 271.152);
-    --text-3: oklch(100% 0.00011 271.152);
+    --text-1: oklch(97% 0 0);
+    --text-2: oklch(97% 0 0);
+    --text-3: oklch(97% 0 0);
     --text-4: oklch(60% 0 0);
     --text-5: oklch(40% 0 0);
 
-    --bg-1: oklch(25% 0.006 230 / 0.82);
-    --bg-2: oklch(32% 0.008 230 / 0.82);
-    --bg-3: oklch(18% 0.005 230 / 0.85);
-    --bg-4: oklch(14% 0.005 230 / 0.88);
-    --hover: oklch(60% 0.08 220 / 0.1);
-    --active: oklch(60% 0.08 220 / 0.2);
-    --active-2: oklch(60% 0.08 220 / 0.3);
+    --bg-1: oklch(20% 0 0 / 0.82);
+    --bg-2: oklch(26% 0 0 / 0.82);
+    --bg-3: oklch(14% 0 0 / 0.85);
+    --bg-4: oklch(10% 0 0 / 0.88);
+    --hover: oklch(90% 0 0 / 0.08);
+    --active: oklch(90% 0 0 / 0.15);
+    --active-2: oklch(90% 0 0 / 0.22);
     --message-hover: var(--hover);
 
-    --accent-1: var(--blue-1); /* links and accent text */
-    --accent-2: var(--blue-2); /* small accent elements */
-    --accent-3: var(--blue-3); /* accent buttons */
-    --accent-4: var(--blue-4); /* accent buttons when hovered */
-    --accent-5: var(--blue-5); /* accent buttons when clicked */
-    --accent-new: var(--red-2); /* for things like mute/deafen */
+    --accent-1: oklch(97% 0 0); /* links, accent text */
+    --accent-2: oklch(89% 0 0); /* small accent elements */
+    --accent-3: oklch(89% 0 0); /* accent buttons */
+    --accent-4: oklch(80% 0 0); /* accent buttons, hovered */
+    --accent-5: oklch(72% 0 0); /* accent buttons, clicked */
+    --accent-new: var(--red-2); /* mute/deafen stays red, functional not aesthetic */
     --mention: linear-gradient(
         to right,
         color-mix(in hsl, var(--accent-2), transparent 90%) 40%,
@@ -134,20 +120,19 @@ body {
         transparent
     );
 
-    /* status indicator colors */
+    /* status dots stay semantic, not monochrome */
     --online: var(--green-2);
     --dnd: var(--red-2);
     --idle: var(--yellow-2);
     --streaming: var(--blue-2);
     --offline: var(--text-4);
 
-    /* border colors */
     --border-light: var(--hover);
     --border: var(--active);
     --border-hover: var(--accent-2);
-    --button-border: hsl(220, 0%, 100%, 0.1);
+    --button-border: hsl(0, 0%, 100%, 0.1);
 
-    /* base colors (unchanged) */
+    /* base palette, unchanged -- used by status dots above */
     --red-1: oklch(75% 0.13 0);
     --red-2: oklch(70% 0.13 0);
     --red-3: oklch(65% 0.13 0);
