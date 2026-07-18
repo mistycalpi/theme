@@ -51,8 +51,8 @@ body {
         var(--accent-2)
     );
 
-    --background-image: on;
-    --background-image-url: url("https://i.imgur.com/Eu9qYlC.jpeg");
+    --background-image: off;
+    --background-image-url: url("");
 
     --transparency-tweaks: on;
     --remove-bg-layer: var(--bg-3);
@@ -88,9 +88,9 @@ body {
     --bg-2: oklch(26% 0 0 / 0.82);
     --bg-3: oklch(14% 0 0 / 0.85);
     --bg-4: oklch(10% 0 0 / 0.88);
-    --hover: oklch(90% 0 0 / 0.08);
-    --active: oklch(90% 0 0 / 0.15);
-    --active-2: oklch(90% 0 0 / 0.22);
+    --hover: oklch(90% 0 0 / 0.14);
+    --active: oklch(90% 0 0 / 0.28);
+    --active-2: oklch(90% 0 0 / 0.38);
     --message-hover: var(--hover);
 
     --accent-1: oklch(97% 0 0); /* links, accent text */
