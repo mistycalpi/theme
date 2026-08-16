@@ -2223,10 +2223,14 @@ body {
     .content_a2f514::before {
         display: block;
         content: '           _.-,=_"""--,_\A        .-" =/7"   _  .3#"=.\A      ,#7  " "  ,//)#d#######=.\A    ,/ "      # ,i-/###########=\A   /         _)#sm###=#=# #######\\\A  /         (#/"_`;\\//#=#\\-#######\\\A /         ,d####-_.._.)##P########\\\A,        ,"############\\\\##bi- `\\| Y.\A|       .d##############b\\##P\'   V  |\A|\\      \'#################!",       |\A|C.       \\###=############7        |\A\'###.           )#########/         \'\A \\#(             \\#######|         /\A  \\B             /#######7 /      /\A   \\             \\######" /"     /\A    `.            \\###7\'       ,\'\A      "-_          `"\'      ,-\'\A         "-._           _.-"\A             """"---""""';
-        font-size: 13px;
+        font-size: 14px;
         font-family: monospace;
         white-space: pre;
-        line-height: 1.2;
+        line-height: 1.1;
+        letter-spacing: normal;
+        text-align: left;
+        flex-shrink: 0;
+        width: max-content;
         background: linear-gradient(to right, var(--brand-360) 0%, var(--background-accent) 25%, var(--background-accent) 75%, var(--brand-360) 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
