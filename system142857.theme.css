@@ -2384,13 +2384,6 @@ body {
     --radius-round: 0px !important;
 }
 
-/* Profile pictures - make them circular */
-.svg__44b0c {
-    overflow: hidden !important;
-    clip-path: circle(50% at 50% 50%) !important;
-    border-radius: 50% !important;
-}
-
 .svg_cc5dd2 > mask,
 .svg__44b0c > rect,
 .svg__44b0c > circle,
